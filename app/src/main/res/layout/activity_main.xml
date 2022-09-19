@@ -51,14 +51,27 @@
         android:inputType="textPassword"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginbtn"
         android:layout_below="@id/password"
-        android:text="LOGIN"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"
-        />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="LOGIN" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="SIGNUP" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,7 +80,7 @@
         android:text="Forgot Password?"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/loginbtn"
+        android:layout_below="@id/signup"
         android:layout_margin="20dp"
 
         />

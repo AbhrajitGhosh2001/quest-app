@@ -21,8 +21,7 @@ public class MainActivity extends AppCompatActivity {
         TextView password=(TextView) findViewById(R.id.password);
 
         MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
-
-        //admin and admin
+        MaterialButton signup = (MaterialButton) findViewById(R.id.signup);
 
         loginbtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -42,10 +41,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        signup.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+            signupActivity();
+            }
+        });
 
     }
+
+
     private void loginActivity() {
         Intent intent = new Intent(this,board.class);
+        startActivity(intent);
+    }
+    private void signupActivity() {
+        Intent intent = new Intent(this,FirstFragment.class);
         startActivity(intent);
     }
 }
